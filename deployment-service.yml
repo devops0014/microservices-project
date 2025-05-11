@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: alen22105006/emailservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: alen22105006/checkoutservice:latest
+          image: abhishek0768/service:v1
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: alen22105006/frontend:latest
+          image: abhishek0768/service:v1
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/paymentservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 50051
         env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/productcatalogservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 3550
         env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/cartservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 7070
         env:
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: alen22105006/shippingservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/adservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 9555
         env:
