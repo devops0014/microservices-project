@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/recommendationservice:latest
+        image: abhishek0768/service:v1
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: alen22105006/loadgenerator:latest
+        image: abhishek0768/service:v1
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -496,7 +496,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: alen22105006/currencyservice:latest
+        image: abhishek0768/service:v1
         ports:
         - name: grpc
           containerPort: 7000
