@@ -29,6 +29,7 @@ ENV GRPC_HEALTH_PROBE_VERSION=v0.4.18
 
 # get packages
 COPY requirements.txt .
+RUN pip install --upgrade
 RUN pip install -r requirements.txt
 
 FROM base as without-grpc-health-probe-bin
